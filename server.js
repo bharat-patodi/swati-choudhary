@@ -1,5 +1,9 @@
 const express = require('express');
+const fs = require('fs');
+const path = require('path');
+// Create app
 const app = express();
+
 
 // View Engine
 app.set('view engine', 'html');
