@@ -25,7 +25,7 @@ app.use((err, req, res, next) => {
 });
 
 // Serve App
-const port = 1001;
+const port = process.env.PORT || 1337;
 app.listen(port, () => {
   console.log(`running at mera apna localhost: ${port} `);
 });
