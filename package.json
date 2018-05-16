@@ -1,0 +1,26 @@
+{
+  "name": "nanuWebsite",
+  "version": "1.0.0",
+  "description": "For one of my earliest projects, let's give a try with the MERN stack.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^4.9.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.4.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-clean-css": "^3.9.4",
+    "gulp-minify": "^2.1.0"
+  },
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}

@@ -1,0 +1,139 @@
+/* Remember to design Mobile Firse */
+/* LVHAF = link styling order */
+
+
+
+/* ---------------------------------------------------------------
+CSS Reset
+--------------------------------------------------------------- */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ---------------------------------------------------------------
+Color Variables
+--------------------------------------------------------------- */
+
+:root {
+  --Mustard: #ffc600;
+  --Navy: #001f3f;
+  --Blue: #0074D9;
+  --Aqua: #7FDBFF;
+  --Teal: #39CCCC;
+  --Olive: #3D9970;
+  --Green: #2ECC40;
+  --Lime-Green: #01FF70;
+  --Yellow: #FFDC00;
+  --Orange: #FF851B;
+  --Red: #FF4136;
+  --Maroon: #85144B;
+  --Fuchsia: #F012BE;
+  --Purple: #B10DC9;
+  --Black: #111111;
+  --Grey: #AAAAAA;
+  --Concrete: #95a5a6;
+  --Asbestos: #7f8c8d;
+  --Silver: #DDDDDD;
+  --CloudWhite: #ecf0f1;
+  --SunFlower: #f1c40f;
+  --Alizarin: #e74c3c;
+  --Pomegranate: #c0392b;
+  --PeterRiver: #3498db;
+  --BelizeHole: #2980b9;
+  --MidnightBlue: #2c3e50;
+  --WetAsphalt: #34495e;
+  --Amethyst: #9b59b6;
+  --Wisteria: #8e44ad;
+}
+
+/* Ensure to include a:focus back if it is reset.*/
+
+/* ---------------------------------------------------------------
+Media Queries
+--------------------------------------------------------------- */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
+
+/* ---------------------------------------------------------------
+My Base Styles
+--------------------------------------------------------------- */
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 1.6em;
+}
+
+h2 {
+  font-size: 1.4em;
+}
+
+h3 {
+  font-size: 1.2em;
+}
+
+label, input {
+  display: block;
+}
+
+/* ---------------------------------------------------------------
+Project Specific Styles
+--------------------------------------------------------------- */
+
+body {
+  background-color: var(--Mustard);
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+}
+
+.firstSection {
+  background-image:  linear-gradient(to right, var(--Teal), var(--Blue));
+}
