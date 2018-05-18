@@ -82,18 +82,7 @@ Color Variables
 
 /* Ensure to include a:focus back if it is reset.*/
 
-/* ---------------------------------------------------------------
-Media Queries
---------------------------------------------------------------- */
 
-/* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) {}
-
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) {}
-
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {}
 
 /* ---------------------------------------------------------------
 My Base Styles
@@ -102,14 +91,15 @@ body {
   font-size: 16px;
   line-height: 1.5;
   margin: 0 auto;
+  font-family: 'Open sans';
 }
 
-h1 {
-  font-size: 1.6em;
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Yellowtail';
 }
 
 h2 {
-  font-size: 1.4em;
+  font-size: 4em;
 }
 
 h3 {
@@ -134,6 +124,70 @@ body {
   grid-template-rows: auto;
 }
 
+.circularImg, .cutoutImg {
+  width: 50%;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+  align-items: center;
+  justify-content: center;
+}
+
+.sectionText {
+  text-align: center;
+}
+
 .firstSection {
-  background-image:  linear-gradient(to right, var(--Teal), var(--Blue));
+  background-image:  linear-gradient(to right, var(--Aqua), var(--Blue));
+}
+
+.secondSection {
+  background-image:  linear-gradient(to right, var(--Fuchsia), var(--Purple));
+}
+
+.thirdSection {
+  background-image:  linear-gradient(to right, var(--Lime-Green), var(--Green));
+}
+
+.fourthSection {
+  background-image:  linear-gradient(to right, var(--Alizarin), var(--Red));
+}
+
+
+/* ---------------------------------------------------------------
+Media Queries
+--------------------------------------------------------------- */
+
+/* Very small devices (mobiles, below 768px) */
+@media (max-width: 400px) {
+  .hidden_mobile {
+    display: none;
+  }
+}
+/* Very small devices (mobiles, between 768px & 401px) */
+@media (min-width: 401px) and (max-width: 767px) {
+  .hidden_mobile {
+    display: none;
+  }
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .hidden_desktop {
+    display: none;
+  }
+  .section {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
 }

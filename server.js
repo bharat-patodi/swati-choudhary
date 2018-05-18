@@ -1,9 +1,9 @@
 const express = require('express');
 const fs = require('fs');
 const path = require('path');
+
 // Create app
 const app = express();
-
 
 // View Engine
 app.set('view engine', 'html');
@@ -15,7 +15,7 @@ app.engine('html', (path, options, callbacks) => {
 app.use(express.static(__dirname));
 
 // Routes
-app.get('/', (req,res) => {
+app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
 });
 
